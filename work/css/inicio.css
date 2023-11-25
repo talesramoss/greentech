@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    background-image: url(/work/img/vista-de-verde-luxuriante-floresta-tropical-em-costa-rica.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 20px;
+    backdrop-filter: blur(0px);
+    max-width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: backdrop-filter 0.5s;
+}
+
+.txt-container {
+    position: relative;
+    top: 250px;
+    transition: top 1s;
+}
+
+.container:hover .txt-container {
+    top: 0;
+}
+
+.container:hover {
+    backdrop-filter: blur(10px);
+}
