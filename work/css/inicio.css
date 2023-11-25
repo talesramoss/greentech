@@ -22,7 +22,7 @@ body {
 
 .txt-container {
     position: relative;
-    top: 250px;
+    top: 950px;
     transition: top 1s;
 }
 
@@ -32,4 +32,10 @@ body {
 
 .container:hover {
     backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
 }
